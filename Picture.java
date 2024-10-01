@@ -17,6 +17,8 @@ public class Picture
     private Circle sun;
     private Circle moon;
     private Square field;
+    private Person personita;
+    private Person personita2;
     /**
      * Constructor for objects of class Picture
      */
@@ -112,7 +114,17 @@ public class Picture
         sun.moveHorizontal(100);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(-100);        
+        sun.slowMoveVertical(-100);
+        
+        personita = new Person();
+        personita.moveHorizontal(-180);
+        personita.makeVisible();
+        personita.slowMoveHorizontal(140);
+        
+        personita2 = new Person();
+        personita2.moveHorizontal(100);
+        personita2.makeVisible();
+        personita2.slowMoveHorizontal(-120);
     
     
     }
